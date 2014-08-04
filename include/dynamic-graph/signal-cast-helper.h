@@ -99,8 +99,8 @@ namespace dynamicgraph
     class SignalCast
     {
     public:
-      static T cast( std::istringstream& stringValue ) { throw 1;}
-      static void disp( const T& t,std::ostream& os )  { throw 1;  }
+      static T cast( std::istringstream& ) { throw 1;}
+      static void disp( const T& ,std::ostream& )  { throw 1;  }
       static void trace( const T& t,std::ostream& os ) { disp(t,os); }
     public:
       // adapter functions for SignalCast
