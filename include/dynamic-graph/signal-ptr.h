@@ -143,8 +143,8 @@ namespace dynamicgraph
 
   protected: // Interdiction of the rest of the heritage
 
-    virtual void addDependency () {}
-    virtual void removeDependency () {}
+    virtual void addDependency (const SignalBase<Time>&) {}
+    virtual void removeDependency (const SignalBase<Time>&) {}
     virtual void clearDependencies () {}
 
   };
